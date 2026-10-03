@@ -1,4 +1,6 @@
-# BarraHotel_Web
+# Barra Hotel Web Front-end
+
+**OBS:** Estamos desenvolvendo o **Front-end e o Back-end em repositórios separados** para realizar os testes iniciais do projeto. Nesta etapa, este repositório contém o **Front-end** da aplicação.
 
 Projeto desenvolvido no módulo de **Desenvolvimento de Aplicação Web**, com o objetivo de desenvolver uma plataforma web própria para o **Barra Hotel**, integrando funcionalidades voltadas para hóspedes, funcionários e administradores.
 
@@ -60,6 +62,7 @@ O sistema permitirá o cadastro e autenticação dos usuários, consulta de quar
 Cada perfil de usuário terá acesso a funcionalidades específicas de acordo com suas permissões. O sistema também contará com uma base de dados para armazenamento e organização das informações relacionadas aos usuários, quartos, reservas e demais registros necessários para o funcionamento da aplicação.
 
 ---
+
 ## Funcionalidades Principais
 
 ### Autenticação e Usuários
@@ -200,6 +203,128 @@ O sistema deverá atender aos seguintes requisitos gerais:
 
 ---
 
+# Como Executar o Projeto
+
+## Requisitos
+
+Para executar o Front-end localmente, é necessário possuir instalado:
+
+* **Node.js**
+* **npm**
+* **Git**
+* **Visual Studio Code** (recomendado)
+
+O projeto foi desenvolvido utilizando **React, TypeScript e Vite**.
+
+---
+
+## 1. Clonar o repositório
+
+Abra o terminal ou PowerShell e execute:
+
+```bash
+git clone https://github.com/vitoria-martinss/BarraHotel_Frontend.git
+```
+
+Depois, entre na pasta do projeto:
+
+```bash
+cd BarraHotel_Frontend
+```
+
+---
+
+## 2. Instalar as dependências
+
+Dentro da pasta do projeto, execute:
+
+```bash
+npm install
+```
+
+Esse comando irá instalar todas as dependências necessárias para executar o Front-end.
+
+**Observação:** não é necessário enviar ou baixar a pasta `node_modules` pelo GitHub. Ela é criada automaticamente pelo comando `npm install`.
+
+---
+
+## 3. Executar o projeto
+
+Após a instalação das dependências, execute:
+
+```bash
+npm run dev
+```
+
+O Vite iniciará o servidor de desenvolvimento e exibirá no terminal um endereço semelhante a:
+
+```text
+http://localhost:5173/
+```
+
+Abra o endereço informado no navegador para visualizar a aplicação.
+
+---
+
+## 4. Encerrar o servidor
+
+Para encerrar a aplicação no terminal, pressione:
+
+```text
+Ctrl + C
+```
+
+---
+
+## Estrutura do Projeto
+
+A estrutura principal esperada do Front-end é:
+
+```text
+BarraHotel_Frontend/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── ...
+│
+├── backend/
+│   └── ...
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── ESTRUTURA.md
+```
+
+> A estrutura pode sofrer alterações durante o desenvolvimento do projeto.
+
+---
+
+## Integração com o Back-end
+
+Nesta etapa do projeto, o **Front-end e o Back-end estão mantidos em repositórios separados** para facilitar os testes iniciais e o desenvolvimento de cada parte da aplicação.
+
+A integração entre as duas partes será realizada posteriormente por meio de uma **API**, permitindo a comunicação entre a interface do usuário e os serviços responsáveis pelo processamento e armazenamento dos dados.
+
+O Front-end poderá utilizar inicialmente dados simulados para desenvolvimento e testes da interface, enquanto o Back-end será desenvolvido separadamente.
+
+---
+
+## Observações para Avaliação
+
+Para executar o Front-end para fins de avaliação:
+
+1. Clonar o repositório.
+2. Acessar a pasta do projeto.
+3. Executar `npm install`.
+4. Executar `npm run dev`.
+5. Acessar no navegador o endereço apresentado pelo Vite.
+
+Não é necessário configurar banco de dados ou executar o Back-end para visualizar a interface do Front-end nesta etapa, quando as funcionalidades estiverem utilizando dados simulados.
+
+---
+
 ## Equipe
 
 **Projeto:** Barra Hotel Web
@@ -212,7 +337,4 @@ O sistema deverá atender aos seguintes requisitos gerais:
 * Jackson Willian dos Santos Florencio
 * Leticia Jorge
 * Poliana Procopio Machado Vela
-* Vitória Martins Da Silva 
-
----
-
+* Vitória Martins Da Silva
